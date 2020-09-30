@@ -1,8 +1,7 @@
 import React from 'react';
-import { KeyboardAvoidingView, Text, StyleSheet, View, Image, Alert, Platform, SmartBar } from 'react-native';
+import { Text, View, Image, StatusBar } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
-import { TextInput, TouchableOpacity } from 'react-native-gesture-handler';
-import { color } from 'react-native-reanimated';
+import { TouchableOpacity } from 'react-native-gesture-handler';
 import { styles } from './css';
 
 const Home = () => {
@@ -15,7 +14,7 @@ const Home = () => {
 
     return (
         <View style={styles.container}>
-            <SmartBar barstyle="light" backgroundColo="#fff"></SmartBar>
+            <StatusBar barstyle="light" backgroundColor="#087AAE" />
             <View style={styles.titleimg}>
                 <Image source={require('../../assets/img/header.png')}></Image>
             </View>

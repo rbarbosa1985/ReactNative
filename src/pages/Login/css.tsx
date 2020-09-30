@@ -5,64 +5,116 @@ const styles = StyleSheet.create({
         flex: 1,
         backgroundColor: '#fff',
         alignItems: 'center',
+        width: 400,
+        height: 800
     },
     titleimg: {
-        alignItems: 'baseline',
-    },
-    list: {
+        alignSelf: 'flex-start',
+        justifyContent: 'flex-start',
         flexDirection: 'row',
-        alignItems: 'baseline',
+    },
+    logo: {
+
     },
     title: {
         color: '#000',
         fontSize: 28,
         fontWeight: 'bold',
         alignSelf: 'center',
+        fontFamily: "Myriad Pro",
         textAlign: 'center'
+    },
+    list: {
+        flexDirection: 'row',
+        width: 300,
+        paddingTop: 10
     },
     subTitle: {
         color: '#000',
-        fontSize: 18,
+        fontSize: 20,
         fontWeight: 'bold',
     },
     listButton: {
         paddingTop: 10,
         paddingBottom: 15,
     },
-    button: {
-        backgroundColor: '#00D4FF',
-        flexDirection: 'row',
-        alignItems: 'center',
-
+    button0: {
+        backgroundColor: '#fff',
+        width: 360,
     },
-    buttonIcon: {
-        backgroundColor: '#ED7947',
+    buttonText0: {
+        alignItems: 'center',
+        paddingTop: 10,
+        paddingBottom: 15,
+        paddingRight: 20,
+        fontFamily: "Myriad Pro",
+        fontWeight: 'bold',
+        fontSize: 20,
+        color: '#087AAE',
+        alignSelf: 'center',
+    },
+    button1: {
+        backgroundColor: '#087AAE',
+        borderRadius: 4,
+        borderColor: "#20232a",
+        width: 360,
+    },
+    buttonText1: {
+        paddingTop: 10,
+        paddingBottom: 10,
+        fontFamily: "Play_700Bold",
+        alignItems: 'center',
+        fontWeight: 'bold',
+        fontSize: 20,
+        color: '#fff',
+        alignSelf: 'center',
+        textAlign: 'center'
+    },
+    icon: {
+        width: 20,
+        height: 20
+    },
+    viewIcon: {
         justifyContent: 'center',
         alignItems: 'center',
-        width: 50,
-        borderBottomRightRadius: 10,
-        borderTopRightRadius: 10
-    },
-    buttonText: {
         paddingTop: 10,
-        paddingBottom: 15,
-        fontFamily: "Play_700Bold",
-        alignItems: 'center',
-        fontWeight: 'bold',
-        fontSize: 26,
-        color: '#0B1F34',
-        alignSelf: 'center',
+        paddingBottom: 10,
+        paddingLeft: 20,
+        paddingRight: 10,
+    },
+    viewOu: {
+        flexDirection: 'row',
+        paddingTop: 10,
+        paddingBottom: 10,
+        width: 300
+    },
+    textOu: {
+        paddingTop: 10,
+        paddingBottom: 10,
+        fontSize: 20,
+    },
+    viewButton: {
+        paddingTop: 5,
+    },
+    button2: {
+        backgroundColor: '#fff',
+        flexDirection: 'row',
+        borderWidth: 1,
+        borderRadius: 4,
+        borderColor: "#787778",
+        width: 360,
     },
     buttonText2: {
-        alignItems: 'center',
-        paddingTop: 10,
-        paddingBottom: 15,
-        fontFamily: "Play_700Bold",
+        fontFamily: "Myriad Pro",
         fontWeight: 'bold',
-        fontSize: 26,
-        color: '#FFF',
+        fontSize: 20,
+        color: '#787778',
         alignSelf: 'center',
-    }
+        textAlign: 'center',
+        width: 300
+    },
+
+
 });
 
 export { styles };
