@@ -15,7 +15,7 @@ const Login = () => {
 
             <Text>
                 COLETAR DADOS
-                    </Text>
+            </Text>
 
 
         </>
