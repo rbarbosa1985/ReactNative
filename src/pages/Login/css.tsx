@@ -20,19 +20,23 @@ const styles = StyleSheet.create({
         color: '#000',
         fontSize: 28,
         fontWeight: 'bold',
-        alignSelf: 'center',
         fontFamily: "Myriad Pro",
-        textAlign: 'center'
+        alignSelf: 'flex-start',
+        paddingLeft: 20,
     },
-    list: {
+    dados: {
         flexDirection: 'row',
-        width: 300,
-        paddingTop: 10
+        paddingLeft: 20,
+
     },
-    subTitle: {
-        color: '#000',
+    email: {
         fontSize: 20,
-        fontWeight: 'bold',
+        paddingTop: 10,
+        width: 360
+    },
+    password: {
+        fontSize: 20,
+        width: 360
     },
     listButton: {
         paddingTop: 10,
@@ -54,12 +58,18 @@ const styles = StyleSheet.create({
         alignSelf: 'center',
     },
     button1: {
+        backgroundColor: '#fff',
+        width: 360,
+        alignSelf: 'flex-start',
+        justifyContent: 'flex-start',
+    },
+    button2: {
         backgroundColor: '#087AAE',
         borderRadius: 4,
         borderColor: "#20232a",
         width: 360,
     },
-    buttonText1: {
+    buttonText2: {
         paddingTop: 10,
         paddingBottom: 10,
         fontFamily: "Play_700Bold",
@@ -96,7 +106,7 @@ const styles = StyleSheet.create({
     viewButton: {
         paddingTop: 5,
     },
-    button2: {
+    button3: {
         backgroundColor: '#fff',
         flexDirection: 'row',
         borderWidth: 1,
@@ -104,7 +114,7 @@ const styles = StyleSheet.create({
         borderColor: "#787778",
         width: 360,
     },
-    buttonText2: {
+    buttonText3: {
         fontFamily: "Myriad Pro",
         fontWeight: 'bold',
         fontSize: 20,

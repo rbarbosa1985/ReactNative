@@ -1,7 +1,7 @@
 import React from 'react';
-import { Text, View, Image, StatusBar } from 'react-native';
+import { Text, View, Image, StatusBar, CheckBox } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
-import { TouchableOpacity } from 'react-native-gesture-handler';
+import { TextInput, TouchableOpacity } from 'react-native-gesture-handler';
 import { styles } from './css';
 
 const Login = () => {
@@ -11,6 +11,9 @@ const Login = () => {
     const handleOnPress = () => {
         navigation.navigate('CreateRecord');
     }
+
+    const [checked, setChecked] = React.useState(false);
+
 
     return (
         <>
@@ -23,32 +26,24 @@ const Login = () => {
                         <Text style={styles.buttonText0}>CADASTRE-SE</Text>
                     </TouchableOpacity>
                 </View>
-                <View>
-                    <Text style={styles.title}>
-                        Avance na sua carreira com confiança
+                <Text style={styles.title}>
+                    ENTRAR
                 </Text>
-                </View>
-                <View style={styles.list}>
-                    <Image source={require('../../assets/img/ok.png')}></Image>
-                    <Text style={styles.subTitle}>
-                        Busque e se candidate a vagas
-                </Text>
-                </View>
-                <View style={styles.list}>
-                    <Image source={require('../../assets/img/ok.png')}></Image>
-                    <Text style={styles.subTitle}>
-                        Conecte-se com pessoas em tempo real
-                </Text>
-                </View>
-                <View style={styles.list}>
-                    <Image source={require('../../assets/img/ok.png')}></Image>
-                    <Text style={styles.subTitle} >
-                        Leve informações relevantes com você
-                </Text>
-                </View>
-                <View style={styles.viewButton}>
+                <TextInput placeholder="E-mail ou telefone" style={styles.email} />
+                <TextInput placeholder="Senha" style={styles.password} />
+
+                <View style={styles.dados}>
+                    <CheckBox></CheckBox>
                     <TouchableOpacity style={styles.button1}>
-                        <Text style={styles.buttonText1}>CONTINUAR</Text>
+                        <Text style={styles.buttonText0}>Saiba mais</Text>
+                    </TouchableOpacity>
+                </View>
+                <TouchableOpacity style={styles.button1}>
+                    <Text style={styles.buttonText0}>ESQUECEU A SENHA?</Text>
+                </TouchableOpacity>
+                <View style={styles.viewButton}>
+                    <TouchableOpacity style={styles.button2}>
+                        <Text style={styles.buttonText2}>CONTINUAR</Text>
                     </TouchableOpacity>
                 </View>
                 <View style={styles.viewOu}>
@@ -57,11 +52,11 @@ const Login = () => {
                     <Text>------------------------------------</Text>
                 </View>
                 <View style={styles.viewButton}>
-                    <TouchableOpacity style={styles.button2}>
+                    <TouchableOpacity style={styles.button3}>
                         <View style={styles.viewIcon}>
                             <Image style={styles.icon} source={require('../../assets/img/google.png')}></Image>
                         </View>
-                        <Text style={styles.buttonText2}>ENTRAR COM O GOOGLE</Text>
+                        <Text style={styles.buttonText3}>ENTRAR COM O GOOGLE</Text>
                     </TouchableOpacity>
                 </View>
             </View >
