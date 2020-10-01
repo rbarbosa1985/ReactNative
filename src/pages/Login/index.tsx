@@ -3,6 +3,7 @@ import { Text, View, Image, StatusBar, CheckBox } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import { TextInput, TouchableOpacity } from 'react-native-gesture-handler';
 import { styles } from './css';
+import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 
 const Login = () => {
 
@@ -21,25 +22,30 @@ const Login = () => {
             <View style={styles.container}>
                 <StatusBar barstyle="light" backgroundColor="#087AAE" />
                 <View style={styles.titleimg}>
-                    <Image style={styles.logo} source={require('../../assets/img/header.png')}></Image>
+                    <Image source={require('../../assets/img/header.png')}></Image>
                     <TouchableOpacity style={styles.button0}>
                         <Text style={styles.buttonText0}>CADASTRE-SE</Text>
                     </TouchableOpacity>
                 </View>
                 <Text style={styles.title}>
-                    ENTRAR
+                    Entrar
                 </Text>
-                <TextInput placeholder="E-mail ou telefone" style={styles.email} />
-                <TextInput placeholder="Senha" style={styles.password} />
+                <TextInput underlineColorAndroid="#787778" placeholder="E-mail ou telefone" style={styles.email} />
+                <TextInput underlineColorAndroid="#787778" placeholder="Senha" style={styles.password} />
 
                 <View style={styles.dados}>
-                    <CheckBox></CheckBox>
+                    <CheckBox
+                        //value={isSelected}
+                        //onValueChange={setSelection}
+                        style={styles.checkbox}
+                    />
+                    <Text style={styles.label}>Lembrar dos meus dados.</Text>
                     <TouchableOpacity style={styles.button1}>
-                        <Text style={styles.buttonText0}>Saiba mais</Text>
+                        <Text style={styles.buttonText1}>Saiba mais</Text>
                     </TouchableOpacity>
                 </View>
-                <TouchableOpacity style={styles.button1}>
-                    <Text style={styles.buttonText0}>ESQUECEU A SENHA?</Text>
+                <TouchableOpacity style={styles.button4}>
+                    <Text style={styles.buttonText4}>ESQUECEU A SENHA?</Text>
                 </TouchableOpacity>
                 <View style={styles.viewButton}>
                     <TouchableOpacity style={styles.button2}>
@@ -47,9 +53,21 @@ const Login = () => {
                     </TouchableOpacity>
                 </View>
                 <View style={styles.viewOu}>
-                    <Text>------------------------------------</Text>
+                    <View >
+                        <View>
+                            <View style={styles.text1}>
+
+                            </View>
+                        </View>
+                    </View>
                     <Text style={styles.textOu}>OU</Text>
-                    <Text>------------------------------------</Text>
+                    <View >
+                        <View>
+                            <View style={styles.text1}>
+
+                            </View>
+                        </View>
+                    </View>
                 </View>
                 <View style={styles.viewButton}>
                     <TouchableOpacity style={styles.button3}>

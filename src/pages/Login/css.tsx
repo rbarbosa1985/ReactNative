@@ -12,35 +12,7 @@ const styles = StyleSheet.create({
         alignSelf: 'flex-start',
         justifyContent: 'flex-start',
         flexDirection: 'row',
-    },
-    logo: {
-
-    },
-    title: {
-        color: '#000',
-        fontSize: 28,
-        fontWeight: 'bold',
-        fontFamily: "Myriad Pro",
-        alignSelf: 'flex-start',
-        paddingLeft: 20,
-    },
-    dados: {
-        flexDirection: 'row',
-        paddingLeft: 20,
-
-    },
-    email: {
-        fontSize: 20,
-        paddingTop: 10,
-        width: 360
-    },
-    password: {
-        fontSize: 20,
-        width: 360
-    },
-    listButton: {
-        paddingTop: 10,
-        paddingBottom: 15,
+        paddingLeft: 5,
     },
     button0: {
         backgroundColor: '#fff',
@@ -51,17 +23,68 @@ const styles = StyleSheet.create({
         paddingTop: 10,
         paddingBottom: 15,
         paddingRight: 20,
-        fontFamily: "Myriad Pro",
         fontWeight: 'bold',
         fontSize: 20,
         color: '#087AAE',
         alignSelf: 'center',
     },
+    title: {
+        color: '#000',
+        paddingTop: 10,
+        paddingBottom: 15,
+        fontSize: 36,
+        fontWeight: 'bold',
+        alignSelf: 'flex-start',
+        paddingLeft: 20,
+    },
+    email: {
+        fontSize: 20,
+        paddingTop: 10,
+        width: 360,
+    },
+    password: {
+        fontSize: 20,
+        width: 360,
+    },
+    dados: {
+        paddingTop: 10,
+        paddingBottom: 5,
+        flexDirection: 'row',
+        alignItems: 'center'
+    },
+    label: {
+        fontSize: 19,
+    },
     button1: {
         backgroundColor: '#fff',
-        width: 360,
         alignSelf: 'flex-start',
         justifyContent: 'flex-start',
+    },
+    buttonText1: {
+        alignItems: 'center',
+        paddingLeft: 5,
+        paddingRight: 15,
+        fontFamily: "Myriad Pro",
+        fontWeight: 'bold',
+        fontSize: 19,
+        color: '#087AAE',
+        alignSelf: 'center',
+    },
+    button4: {
+        backgroundColor: '#fff',
+        alignSelf: 'flex-start',
+    },
+    buttonText4: {
+        paddingLeft: 0,
+        alignItems: 'flex-start',
+        justifyContent: 'flex-start',
+        paddingTop: 10,
+        paddingBottom: 15,
+        fontFamily: "Myriad Pro",
+        fontWeight: 'bold',
+        fontSize: 20,
+        color: '#087AAE',
+        alignSelf: 'flex-start',
     },
     button2: {
         backgroundColor: '#087AAE',
@@ -80,28 +103,22 @@ const styles = StyleSheet.create({
         alignSelf: 'center',
         textAlign: 'center'
     },
-    icon: {
-        width: 20,
-        height: 20
-    },
-    viewIcon: {
-        justifyContent: 'center',
-        alignItems: 'center',
-        paddingTop: 10,
-        paddingBottom: 10,
-        paddingLeft: 20,
-        paddingRight: 10,
-    },
     viewOu: {
         flexDirection: 'row',
-        paddingTop: 10,
-        paddingBottom: 10,
-        width: 300
+        width: 350
     },
     textOu: {
         paddingTop: 10,
         paddingBottom: 10,
+        paddingLeft: 10,
+        paddingRight: 10,
         fontSize: 20,
+    },
+    text1: {
+        paddingTop: 25,
+        borderBottomColor: '#787778', // Add this to specify bottom border color
+        borderBottomWidth: 0.6,
+        width: 150
     },
     viewButton: {
         paddingTop: 5,
@@ -111,14 +128,26 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         borderWidth: 1,
         borderRadius: 4,
-        borderColor: "#787778",
+        borderColor: "#087AAE",
         width: 360,
+    },
+    viewIcon: {
+        justifyContent: 'center',
+        alignItems: 'center',
+        paddingTop: 10,
+        paddingBottom: 10,
+        paddingLeft: 20,
+        paddingRight: 10,
+    },
+    icon: {
+        width: 20,
+        height: 20
     },
     buttonText3: {
         fontFamily: "Myriad Pro",
         fontWeight: 'bold',
         fontSize: 20,
-        color: '#787778',
+        color: '#087AAE',
         alignSelf: 'center',
         textAlign: 'center',
         width: 300
