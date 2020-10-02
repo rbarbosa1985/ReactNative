@@ -64,7 +64,6 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         paddingLeft: 5,
         paddingRight: 15,
-        fontFamily: "Myriad Pro",
         fontWeight: 'bold',
         fontSize: 19,
         color: '#087AAE',
@@ -72,19 +71,16 @@ const styles = StyleSheet.create({
     },
     button4: {
         backgroundColor: '#fff',
-        alignSelf: 'flex-start',
+        marginRight: 160,
     },
     buttonText4: {
         paddingLeft: 0,
-        alignItems: 'flex-start',
-        justifyContent: 'flex-start',
         paddingTop: 10,
         paddingBottom: 15,
-        fontFamily: "Myriad Pro",
         fontWeight: 'bold',
         fontSize: 20,
         color: '#087AAE',
-        alignSelf: 'flex-start',
+
     },
     button2: {
         backgroundColor: '#087AAE',
@@ -95,7 +91,6 @@ const styles = StyleSheet.create({
     buttonText2: {
         paddingTop: 10,
         paddingBottom: 10,
-        fontFamily: "Play_700Bold",
         alignItems: 'center',
         fontWeight: 'bold',
         fontSize: 20,
@@ -144,7 +139,6 @@ const styles = StyleSheet.create({
         height: 20
     },
     buttonText3: {
-        fontFamily: "Myriad Pro",
         fontWeight: 'bold',
         fontSize: 20,
         color: '#087AAE',
